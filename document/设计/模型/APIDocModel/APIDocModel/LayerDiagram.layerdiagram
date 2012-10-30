@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5295fd11-b36a-46ce-851a-56fd56d1ebca" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="8b29e0bd-d8d6-4e03-a19e-a9038f052eb3" name="DB Cache">
+      <description>公共类库</description>
+    </layer>
+    <layer Id="fda99534-e6a6-409d-8c29-33445cd9e0ff" name="DB" />
+    <layer Id="2e2735fe-3c9a-457f-b86c-db607c6b5f7d" name="DB Access">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="f59c284a-3dac-4621-94f8-18bbc167e61b" direction="Forward">
+          <layerMoniker Id="fda99534-e6a6-409d-8c29-33445cd9e0ff" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="aea1b272-0ffb-4969-b0f3-d77460d8d306" name="BLL">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ba1a81f3-8dc6-4464-b8fa-31044286ec1a" direction="Forward">
+          <layerMoniker Id="2e2735fe-3c9a-457f-b86c-db607c6b5f7d" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="c3c0e3b9-8402-4e68-89fc-4eec7c86b552" direction="Forward">
+          <layerMoniker Id="8b29e0bd-d8d6-4e03-a19e-a9038f052eb3" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="75f104c9-c300-4c6b-bc57-dca91cd1bc43" name="API Doc">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="32f0c59d-8734-4e75-a72f-a81f5507a3df" direction="Forward">
+          <layerMoniker Id="aea1b272-0ffb-4969-b0f3-d77460d8d306" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="e8906b09-f32d-4fd1-b5e8-d55ec2e9eb3c" direction="Forward">
+          <layerMoniker Id="d912537c-d644-43bb-a24b-e969b58ca98c" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="cef9e4bc-73d2-4599-886b-d668d5661bb2" name="API Editor&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="c08c4d9f-6e4b-4ea4-a73b-ed0b09f12132" direction="Forward">
+          <layerMoniker Id="aea1b272-0ffb-4969-b0f3-d77460d8d306" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="5553cf69-f002-4130-b075-1bf8e1f0ac39" direction="Forward">
+          <layerMoniker Id="d912537c-d644-43bb-a24b-e969b58ca98c" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="d912537c-d644-43bb-a24b-e969b58ca98c" name="Web Cache" />
+  </layers>
+</layerModel>
