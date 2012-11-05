@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5295fd11-b36a-46ce-851a-56fd56d1ebca" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="c50e7305-4378-44e1-8a5c-6eb7aaeafb70" name="Comment1">
+      <body>Data Storage</body>
+    </comment>
+    <comment Id="e02aca29-e617-447e-88a4-8a22b0c27b37" name="Comment11">
+      <body>Data Access Layer</body>
+    </comment>
+    <comment Id="0cf3ce0a-4b9e-47ce-a299-e6b776c646e7" name="Comment2">
+      <body>Business Logic Layer</body>
+    </comment>
+    <comment Id="6b23cf04-18be-4b6f-80ab-098bbd6a5ee0" name="Comment3">
+      <body>Presentation Layer</body>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="2e2735fe-3c9a-457f-b86c-db607c6b5f7d" name="Database Access">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="85da47a3-7c11-460f-a675-98c56c02642f" direction="Forward">
+          <layerMoniker Id="b32d0c93-3c5c-4dbe-9ffd-432f9893b677" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="4cd4bd96-768b-4c9a-b2e7-2d0ae88938cf" name="Interface" />
+        <layer Id="6b3ed689-ec2c-4b8d-a8ae-f75d6a0d29b6" name="Factory" />
+        <layer Id="bb902bf2-40e0-452f-9937-62b6c67c5652" name="SQL DAL" />
+        <layer Id="a4e3085f-017b-4558-98bd-17cf37010424" name="Oracle DAL" />
+      </childLayers>
+    </layer>
+    <layer Id="aea1b272-0ffb-4969-b0f3-d77460d8d306" name="Business Components">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ba1a81f3-8dc6-4464-b8fa-31044286ec1a" direction="Forward">
+          <layerMoniker Id="2e2735fe-3c9a-457f-b86c-db607c6b5f7d" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="e28a4887-87ae-48cf-9cc1-16f1d0672fc3" direction="Forward">
+          <layerMoniker Id="cfa4579e-ffd1-46c7-9f49-8c9e6d3301c5" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="ac306e40-1b72-43fc-8996-996c2e421a06" direction="Forward">
+          <layerMoniker Id="55cbab6e-d081-4aec-b069-4aa0508cce96" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="1d5942b2-92da-4ebc-8da3-21f3b5b7fc49" name="&#xD;&#xA;Category" />
+        <layer Id="da060d63-6a20-41fb-8f34-d19b3139e32e" name="&#xD;&#xA;API" />
+        <layer Id="61259005-8b17-4d70-b948-84308003e00d" name="&#xD;&#xA;Profile" />
+        <layer Id="55241ba3-8e46-4957-b541-c11d58936054" name="&#xD;&#xA;Membership" />
+        <layer Id="d1d71c66-da76-41ce-b8c0-6be19a956918" name="&#xD;&#xA;Configuation" />
+      </childLayers>
+    </layer>
+    <layer Id="75f104c9-c300-4c6b-bc57-dca91cd1bc43" name="ASP.NET MVC 4.0">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="32f0c59d-8734-4e75-a72f-a81f5507a3df" direction="Forward">
+          <layerMoniker Id="aea1b272-0ffb-4969-b0f3-d77460d8d306" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="e5f9ad42-9cad-4560-940a-f2c99800f206" name="&#xD;&#xA;&#xD;&#xA;API &amp; Category" />
+        <layer Id="062f5a31-6268-4a16-affe-0cfaecf0a447" name="&#xD;&#xA;&#xD;&#xA;Editor" />
+        <layer Id="0c5a1bfc-a01b-4116-a917-ac22ec7219cd" name="&#xD;&#xA;&#xD;&#xA;Membership" />
+        <layer Id="70f3cc73-a8cc-4099-ac7e-288668193275" name="&#xD;&#xA;&#xD;&#xA;Profile" />
+      </childLayers>
+    </layer>
+    <layer Id="b32d0c93-3c5c-4dbe-9ffd-432f9893b677" name="Database">
+      <childLayers>
+        <layer Id="e6071a18-ba09-4933-8624-60e76dca4613" name="&#xD;&#xA;SQL2008/Oracle&#xD;&#xA;User Database" />
+        <layer Id="fda99534-e6a6-409d-8c29-33445cd9e0ff" name="&#xD;&#xA;SQL2008/Oracle&#xD;&#xA;API Database" />
+      </childLayers>
+    </layer>
+    <layer Id="b53df6ca-021b-4d8f-8431-b4083b7148f3" name="Static Data">
+      <childLayers>
+        <layer Id="fe0c1d04-611e-46d7-b358-9375a1c31585" name="&#xD;&#xA;BlobStorage/Disk&#xD;&#xA;Static Files" />
+        <layer Id="4122ec81-aa81-4d1e-8b62-ce2cc37052f1" name="&#xD;&#xA;BlobStorage/Disk&#xD;&#xA;API Html" />
+      </childLayers>
+    </layer>
+    <layer Id="cfa4579e-ffd1-46c7-9f49-8c9e6d3301c5" name="Static Data Access">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="d1e54073-4049-4b87-a421-0434a270f007" direction="Forward">
+          <layerMoniker Id="b53df6ca-021b-4d8f-8431-b4083b7148f3" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="e3d16249-4ecd-4ef8-b36e-57d4f4fc851b" name="Interface" />
+        <layer Id="baa3688b-d617-48fe-9331-3339936a43cd" name="Factory" />
+        <layer Id="03b8fa0b-c93c-422b-99ee-0ddddd2d187f" name="BlobStorage DAL" />
+        <layer Id="efd7ae46-c81d-4438-a4fb-977e073abd4a" name="Disk DAL" />
+      </childLayers>
+    </layer>
+    <layer Id="197f96a6-7b14-4e75-8501-323ddf03c13d" name="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Model Objects" />
+    <layer Id="c7c22f8a-82ae-40ff-a5ea-dd3647b4ba31" name="Cached Data&#xD;&#xA;&#xD;&#xA;Memcache/&#xD;&#xA;Windows Azure Cache" />
+    <layer Id="55cbab6e-d081-4aec-b069-4aa0508cce96" name="Cached Data Access">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="cedee869-bf7f-42f2-837f-8a8f08442cb7" direction="Forward">
+          <layerMoniker Id="c7c22f8a-82ae-40ff-a5ea-dd3647b4ba31" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="e7631e21-cb49-4007-b54f-95355a678495" name="Interface" />
+        <layer Id="8830bd28-0a54-41d7-af9b-1b31bd0c2fc9" name="Factory" />
+        <layer Id="5b30e238-4499-451a-85d9-eb741d0cb963" name="Memcached DAL" />
+        <layer Id="2fed3d3d-2eea-4e54-9ce4-16284d3af8d0" name="WAC DAL" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>
