@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="代码生成/文本转换记录">
+  <MessageClass Name="Message" Label="消息" Option="显示提供相关信息的消息" />
+  <MessageClass Name="Warning" Label="警告" Option="显示警告" />
+  <MessageClass Name="Error" Label="错误" Option="显示错误" />
+  <MessageClass Name="Property" Label="属性" Option="显示元数据" />
+  <MessageClass Name="Diagnostic" Label="消息" Option="显示诊断消息" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="High" Text="已启动代码生成或文本转换。" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Diagnostic" Text="名称 = ClassTemplate" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Diagnostic" Text="ProjectPath = ..\APIDocModelLib\APIDocModelLib.csproj" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Medium" Text="APIDocModel 的文本模板绑定:“ClassTemplate”会将 ClassTemplate.t4 应用于: “APIDocModel::Damain”-  (Class), “APIDocModel::Category”-  (Class), “APIDocModel::Request”-  (Class), “APIDocModel::API”-  (Class), “APIDocModel::Response”-  (Class), “APIDocModel::ResponseDemo”-  (Class), “APIDocModel::ErrorCode”-  (Class), “APIDocModel::Set”-  (Class), “APIDocModel::BaseTitle”-  (Class), “APIDocModel::Parameter”-  (Class), “APIDocModel::BaseId”-  (Class), “APIDocModel::Set&lt;T&gt;”-  (Class) " />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Medium" Text="“APIDocModel::Damain”-  (Class) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\Damain.cs" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Medium" Text="“APIDocModel::Category”-  (Class) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\Category.cs" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Medium" Text="“APIDocModel::Request”-  (Class) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\Request.cs" />
+  <Message Timestamp="2012-11-07T23:01:11" Importance="Medium" Text="“APIDocModel::API”-  (Class) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\API.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="“APIDocModel::Response”-  (Class) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\Response.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="“APIDocModel::ResponseDemo”-  (Class) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\ResponseDemo.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="“APIDocModel::ErrorCode”-  (Class) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\ErrorCode.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="“APIDocModel::Set”-  (Class) : 成功(已创建文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\Set_T.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="“APIDocModel::BaseTitle”-  (Class) : 成功(已创建文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\BaseTitle.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="“APIDocModel::Parameter”-  (Class) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\Parameter.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="“APIDocModel::BaseId”-  (Class) : 成功(已创建文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\BaseId.cs" />
+  <Error Timestamp="2012-11-07T23:01:12" Importance="High" Text="“APIDocModel::Set&lt;T&gt;”-  (Class) : 无法创建文件，路径中具有非法字符。 - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\Set&lt;T&gt;.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="“APIDocModel::Set&lt;T&gt;”-  (Class): 没有生成任何文件，因为模板“ClassTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="名称 = EnumTemplate" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="ProjectPath = ..\APIDocModelLib\APIDocModelLib.csproj" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="APIDocModel 的文本模板绑定:“EnumTemplate”会将 EnumTemplate.t4 应用于: “APIDocModel::ActionType”-  (Enumeration), “APIDocModel::RequestType”-  (Enumeration), “APIDocModel::ResponseType”-  (Enumeration) " />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="“APIDocModel::ActionType”-  (Enumeration) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\ActionType.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="“APIDocModel::RequestType”-  (Enumeration) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\RequestType.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="“APIDocModel::ResponseType”-  (Enumeration) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\ResponseType.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="名称 = InterfaceTemplate" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="ProjectPath = ..\APIDocModelLib\APIDocModelLib.csproj" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="APIDocModel 的文本模板绑定:“InterfaceTemplate”会将 InterfaceTemplate.t4 应用于: “APIDocModel::IBaseId”-  (Interface) " />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="“APIDocModel::IBaseId”-  (Interface) : 成功(已替换文件) - C:\Users\tony\Documents\GitHub\APIDoc\code\APIDoc\APIDocModelLib\GeneratedCode\IBaseId.cs" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="名称 = StructTemplate" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="ProjectPath = ..\APIDocModelLib\APIDocModelLib.csproj" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Medium" Text="APIDocModel 的文本模板绑定:“StructTemplate”会将 StructTemplate.t4 应用于: “APIDocModel::Damain”-  (Class), “APIDocModel::Category”-  (Class), “APIDocModel::Request”-  (Class), “APIDocModel::API”-  (Class), “APIDocModel::Response”-  (Class), “APIDocModel::ResponseDemo”-  (Class), “APIDocModel::ErrorCode”-  (Class), “APIDocModel::Set”-  (Class), “APIDocModel::BaseTitle”-  (Class), “APIDocModel::Parameter”-  (Class), “APIDocModel::BaseId”-  (Class), “APIDocModel::Set&lt;T&gt;”-  (Class) " />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="“APIDocModel::Damain”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="“APIDocModel::Category”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:12" Importance="Diagnostic" Text="“APIDocModel::Request”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::API”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::Response”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::ResponseDemo”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::ErrorCode”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::Set”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::BaseTitle”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::Parameter”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::BaseId”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::Set&lt;T&gt;”-  (Class): 没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="选定内容包含未绑定到模板的 9 元素。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“8699c520-ee8f-4de8-88e6-dc463186d8cd”-  (Generalization): 没有绑定的模板。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“3b639bf9-5dec-4a64-9851-4bc753a9ca95”-  (Generalization): 没有绑定的模板。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::”-  (Association): 没有绑定的模板。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::”-  (Association): 没有绑定的模板。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::”-  (Association): 没有绑定的模板。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::”-  (Association): 没有绑定的模板。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“e4d16853-6ac8-48ec-b622-775e249cffe6”-  (Generalization): 没有绑定的模板。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“APIDocModel::”-  (Association): 没有绑定的模板。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="Diagnostic" Text="“ed3fdffa-7e51-42c2-bc97-1e09813ca0bd”-  (Generalization): 没有绑定的模板。" />
+  <Message Timestamp="2012-11-07T23:01:13" Importance="High" Text="代码生成完成。错误: 1。警告: 0。" />
+</Log>

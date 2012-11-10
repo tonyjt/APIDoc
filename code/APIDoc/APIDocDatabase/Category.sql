@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Category]
+(
+	[CategoryId] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Title] NVARCHAR(128) NOT NULL, 
+    [ParentId] UNIQUEIDENTIFIER NULL, 
+    [DomainId] UNIQUEIDENTIFIER NOT NULL, 
+    CONSTRAINT [FK_Category_Domain] FOREIGN KEY ([DomainId]) REFERENCES [Domain]([DomainId])
+)
