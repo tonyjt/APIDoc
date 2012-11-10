@@ -8,30 +8,31 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-public class Response
+namespace APIDocModel
 {
-	public  Set<ResponseDemo> DemoSet
-	{
-		get;
-		set;
-	}
+    public class Response
+    {
+        public Set<ResponseDemo> DemoSet
+        {
+            get;
+            set;
+        }
 
-	public  Set<Parameter> ParameterSet
-	{
-		get;
-		set;
-	}
+        public Set<Parameter> ParameterSet
+        {
+            get;
+            set;
+        }
 
-	public  Set<ErrorCode> ErrorCodeSet
-	{
-		get;
-		set;
-	}
+        public Set<ErrorCode> ErrorCodeSet
+        {
+            get;
+            set;
+        }
 
-	public Response()
-	{
-	}
+        public Response()
+        {
+        }
 
+    }
 }
-

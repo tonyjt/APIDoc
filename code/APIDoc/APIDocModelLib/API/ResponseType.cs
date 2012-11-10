@@ -8,9 +8,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-public enum ResponseType : int
+namespace APIDocModel
 {
-	JSON,
-	XML,
+    public enum ResponseType : int
+    {
+        JSON,
+        XML,
+    }
 }

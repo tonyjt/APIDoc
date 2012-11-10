@@ -8,8 +8,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-public enum RequestType : int
+namespace APIDocModel
 {
-	HTTP,
+    public enum RequestType : int
+    {
+        HTTP,
+    }
 }

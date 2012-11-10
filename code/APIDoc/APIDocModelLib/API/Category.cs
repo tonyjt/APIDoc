@@ -9,23 +9,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Category : BaseTitle
+namespace APIDocModel
 {
-	public Set<APIDoc> APISet
-	{
-		get;
-		set;
-	}
+    public class Category : BaseTitle
+    {
+        public Set<APIDoc> APISet
+        {
+            get;
+            set;
+        }
 
-	public Set<Category> CategorySet
-	{
-		get;
-		set;
-	}
+        public Set<Category> CategorySet
+        {
+            get;
+            set;
+        }
 
-	public Category()
-	{
-	}
+        public Category()
+        {
+        }
+
+    }
 
 }
-

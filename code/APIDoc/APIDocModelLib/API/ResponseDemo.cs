@@ -8,24 +8,26 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-public class ResponseDemo
+namespace APIDocModel
 {
-	public  ResponseType ResponseType
-	{
-		get;
-		set;
-	}
+    public class ResponseDemo
+    {
+        public ResponseType ResponseType
+        {
+            get;
+            set;
+        }
 
-	public string Demo
-	{
-		get;
-		set;
-	}
+        public string Demo
+        {
+            get;
+            set;
+        }
 
-	public ResponseDemo()
-	{
-	}
+        public ResponseDemo()
+        {
+        }
+
+    }
 
 }
-

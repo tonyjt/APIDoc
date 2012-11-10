@@ -8,42 +8,44 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-public class Request
+namespace APIDocModel
 {
-	public  string Url
-	{
-		get;
-		set;
-	}
+    public class Request
+    {
+        public string Url
+        {
+            get;
+            set;
+        }
 
-	public  RequestType RequestType
-	{
-		get;
-		set;
-	}
+        public RequestType RequestType
+        {
+            get;
+            set;
+        }
 
-	public  Set<ActionType> ActionType
-	{
-		get;
-		set;
-	}
+        public Set<ActionType> ActionType
+        {
+            get;
+            set;
+        }
 
-	public  bool NeedAuth
-	{
-		get;
-		set;
-	}
+        public bool NeedAuth
+        {
+            get;
+            set;
+        }
 
-	public  Set<Parameter> ParameterSet
-	{
-		get;
-		set;
-	}
+        public Set<Parameter> ParameterSet
+        {
+            get;
+            set;
+        }
 
-	public Request()
-	{
-	}
+        public Request()
+        {
+        }
+
+    }
 
 }
-

@@ -8,15 +8,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-public class Id
+namespace APIDocModel
 {
-    public Guid Value { get; set; }
-
-    public Id()
+    public class Id
     {
+        public Guid Value { get; set; }
+
+        public Id()
+        {
+        }
     }
-
-    
 }
-

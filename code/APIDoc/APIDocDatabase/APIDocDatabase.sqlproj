@@ -53,17 +53,21 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="APIDoc" />
+    <Folder Include="APIDoc\Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="APIDoc.sql" />
-    <Build Include="Parameter.sql" />
-    <Build Include="ResponseDemo.sql" />
-    <Build Include="Error.sql" />
-    <Build Include="APIDocError.sql" />
-    <Build Include="Category.sql" />
-    <Build Include="Domain.sql" />
+    <Build Include="APIDoc\Tables\ResponseDemo.sql" />
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="APIDocDatabase.refactorlog" />
+    <RefactorLog Include="APIDoc\Tables\APIDocDatabase.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="APIDoc\Tables\APIDoc.sql" />
+    <Build Include="APIDoc\Tables\APIDocError.sql" />
+    <Build Include="APIDoc\Tables\Category.sql" />
+    <Build Include="APIDoc\Tables\Domain.sql" />
+    <Build Include="APIDoc\Tables\Error.sql" />
+    <Build Include="APIDoc\Tables\Parameter.sql" />
   </ItemGroup>
 </Project>

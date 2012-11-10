@@ -9,29 +9,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class ErrorCode
+namespace APIDocModel
 {
-	public  int Code
-	{
-		get;
-		set;
-	}
+    public class ErrorCode
+    {
+        public int Code
+        {
+            get;
+            set;
+        }
 
-	public  string Message
-	{
-		get;
-		set;
-	}
+        public string Message
+        {
+            get;
+            set;
+        }
 
-	public  string Description
-	{
-		get;
-		set;
-	}
+        public string Description
+        {
+            get;
+            set;
+        }
 
-	public ErrorCode()
-	{
-	}
+        public ErrorCode()
+        {
+        }
+
+    }
 
 }
-

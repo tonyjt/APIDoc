@@ -8,22 +8,23 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-public class Damain : BaseTitle
+namespace APIDocModel
 {
-	/// <summary>
-	/// String
-	/// </summary>
-	public String Description
-	{
-		get;
-		set;
-	}
-    public String RootUrl { get; set; }
+    public class Damain : BaseTitle
+    {
+        /// <summary>
+        /// String
+        /// </summary>
+        public String Description
+        {
+            get;
+            set;
+        }
+        public String RootUrl { get; set; }
 
-	public Damain()
-	{
-	}
+        public Damain()
+        {
+        }
 
+    }
 }
-

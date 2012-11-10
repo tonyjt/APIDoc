@@ -9,35 +9,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Parameter
+namespace APIDocModel
 {
-	public  string Key
-	{
-		get;
-		set;
-	}
+    public class Parameter
+    {
+        public string Key
+        {
+            get;
+            set;
+        }
 
-	public  string Type
-	{
-		get;
-		set;
-	}
+        public string Type
+        {
+            get;
+            set;
+        }
 
-	public  bool Indispensable
-	{
-		get;
-		set;
-	}
+        public bool Indispensable
+        {
+            get;
+            set;
+        }
 
-	public  string Description
-	{
-		get;
-		set;
-	}
+        public string Description
+        {
+            get;
+            set;
+        }
 
-	public Parameter()
-	{
-	}
+        public Parameter()
+        {
+        }
 
+    }
 }
-

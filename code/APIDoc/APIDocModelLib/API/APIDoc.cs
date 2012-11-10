@@ -8,26 +8,28 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-public class APIDoc : BaseTitle
+namespace APIDocModel
 {
-	public  Request Request
-	{
-		get;
-		set;
-	}
+    public class APIDoc : BaseTitle
+    {
+        public Request Request
+        {
+            get;
+            set;
+        }
 
-	public  Response Response
-	{
-		get;
-		set;
-	}
+        public Response Response
+        {
+            get;
+            set;
+        }
 
-    public string Description { get; set; }
+        public string Description { get; set; }
 
-    public APIDoc()
-	{
-	}
+        public APIDoc()
+        {
+        }
+
+    }
 
 }
-

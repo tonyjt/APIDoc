@@ -8,14 +8,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-public class BaseTitle
+namespace APIDocModel
 {
-	public string Title
-	{
-		get;
-		set;
-	}
+    public class BaseTitle
+    {
+        public string Title
+        {
+            get;
+            set;
+        }
 
+    }
 }
-

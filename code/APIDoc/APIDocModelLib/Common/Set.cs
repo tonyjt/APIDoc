@@ -8,14 +8,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-public class Set<T>
+namespace APIDocModel
 {
-	public List<T> Value
-	{
-		get;
-		set;
-	}
+    public class Set<T>
+    {
+        public List<T> Value
+        {
+            get;
+            set;
+        }
 
+    }
 }
-

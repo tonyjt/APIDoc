@@ -9,8 +9,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public enum ActionType : int
+namespace APIDocModel
 {
-	GET,
-	POST,
+    public enum ActionType : int
+    {
+        GET,
+        POST,
+    }
 }
