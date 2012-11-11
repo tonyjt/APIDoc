@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace APIDocModel
+namespace APIDoc.Model
 {
     public enum ActionType : int
     {

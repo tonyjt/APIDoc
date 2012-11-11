@@ -22,10 +22,9 @@
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <childLayers>
-        <layer Id="4cd4bd96-768b-4c9a-b2e7-2d0ae88938cf" name="Interface" />
-        <layer Id="6b3ed689-ec2c-4b8d-a8ae-f75d6a0d29b6" name="Factory" />
-        <layer Id="bb902bf2-40e0-452f-9937-62b6c67c5652" name="SQL DAL" />
-        <layer Id="a4e3085f-017b-4558-98bd-17cf37010424" name="Oracle DAL" />
+        <layer Id="bb902bf2-40e0-452f-9937-62b6c67c5652" name="SQL &#xD;&#xA;Provider" />
+        <layer Id="a4e3085f-017b-4558-98bd-17cf37010424" name="Oracle &#xD;&#xA;Provider" />
+        <layer Id="ca9342ca-ad22-422a-8615-69c1c03819fc" name="Provider" />
       </childLayers>
     </layer>
     <layer Id="aea1b272-0ffb-4969-b0f3-d77460d8d306" name="Business Components">
@@ -80,10 +79,9 @@
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <childLayers>
-        <layer Id="e3d16249-4ecd-4ef8-b36e-57d4f4fc851b" name="Interface" />
-        <layer Id="baa3688b-d617-48fe-9331-3339936a43cd" name="Factory" />
-        <layer Id="03b8fa0b-c93c-422b-99ee-0ddddd2d187f" name="BlobStorage DAL" />
-        <layer Id="efd7ae46-c81d-4438-a4fb-977e073abd4a" name="Disk DAL" />
+        <layer Id="03b8fa0b-c93c-422b-99ee-0ddddd2d187f" name="BlobStorage &#xD;&#xA;Provider" />
+        <layer Id="f6f543ab-2d75-470f-bb35-a6d20435b0cf" name="Provider" />
+        <layer Id="efd7ae46-c81d-4438-a4fb-977e073abd4a" name="Disk Provider" />
       </childLayers>
     </layer>
     <layer Id="197f96a6-7b14-4e75-8501-323ddf03c13d" name="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Model Objects" />
@@ -95,10 +93,10 @@
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <childLayers>
-        <layer Id="e7631e21-cb49-4007-b54f-95355a678495" name="Interface" />
-        <layer Id="8830bd28-0a54-41d7-af9b-1b31bd0c2fc9" name="Factory" />
-        <layer Id="5b30e238-4499-451a-85d9-eb741d0cb963" name="Memcached DAL" />
-        <layer Id="2fed3d3d-2eea-4e54-9ce4-16284d3af8d0" name="WAC DAL" />
+        <layer Id="8830bd28-0a54-41d7-af9b-1b31bd0c2fc9" name="Provider" />
+        <layer Id="5b30e238-4499-451a-85d9-eb741d0cb963" name="Memcached Provider" />
+        <layer Id="2fed3d3d-2eea-4e54-9ce4-16284d3af8d0" name="WAC &#xD;&#xA;Provider" />
+        <layer Id="1f6d301a-be7b-4f16-bffe-54e53bba7f18" name="Memory&#xD;&#xA;Cache" />
       </childLayers>
     </layer>
   </layers>

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "APIDocModeling", "APIDoc\APIDocModeling.modelproj", "{A44DB1EE-6704-406A-98A6-7C5B2221BE81}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "APIDoc.Modeling", "APIDoc\APIDoc.Modeling.modelproj", "{A44DB1EE-6704-406A-98A6-7C5B2221BE81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIDocModel", "APIDocModelLib\APIDocModel.csproj", "{DFAA363A-B22F-48D0-914A-65E5A92B1F01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIDoc.Model", "APIDocModelLib\APIDoc.Model.csproj", "{DFAA363A-B22F-48D0-914A-65E5A92B1F01}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "APIDocDatabase", "APIDocDatabase\APIDocDatabase.sqlproj", "{1448197D-ECF4-4B1D-BEA4-FB3A4260768C}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "APIDoc.Database", "APIDocDatabase\APIDoc.Database.sqlproj", "{1448197D-ECF4-4B1D-BEA4-FB3A4260768C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIDocDatabaseAccess", "APIDocDataAccess\APIDocDatabaseAccess.csproj", "{A5E7ADDD-7493-4290-B7C5-A64FCBDBC445}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIDoc.DatabaseAccess", "APIDocDataAccess\APIDoc.DatabaseAccess.csproj", "{A5E7ADDD-7493-4290-B7C5-A64FCBDBC445}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration", "Configuration\Configuration.csproj", "{BC265F99-01A6-4267-9569-81271E10FEBA}"
 EndProject
