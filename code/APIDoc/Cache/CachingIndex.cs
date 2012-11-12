@@ -5,9 +5,10 @@ using System.Text;
 
 namespace Caching
 {
+    [Serializable]
     public class CachingIndex
     {
-        public String Key { get; set; }
+        public String IndexKey { get; set; }
 
         public DateTime CreateDate { get; set; }
 
@@ -25,6 +26,16 @@ namespace Caching
             get
             {
                 return DateTime.Now.CompareTo(ExpiredDate) > 0;
+            }
+        }
+
+        public Type KeyType { get; set; }
+
+        public Object Key
+        {
+            get
+            {
+                return Convert.ChangeType(IndexKey, KeyType);
             }
         }
     }

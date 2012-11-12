@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caching", "Cache\Caching.cs
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_lib", "_lib", "{FBF73CA3-21CF-4729-8170-5169F464DD5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caching.Testing", "Caching.Testing\Caching.Testing.csproj", "{31713D6D-5151-436C-8CEA-98D0C0C5D258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caching.Azure", "Caching.Azure\Caching.Azure.csproj", "{11CF19FE-0ACD-40C8-94F5-792C02B1914C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,14 @@ Global
 		{21FE8D1B-A188-4018-A287-6660C6A1AFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21FE8D1B-A188-4018-A287-6660C6A1AFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21FE8D1B-A188-4018-A287-6660C6A1AFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31713D6D-5151-436C-8CEA-98D0C0C5D258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31713D6D-5151-436C-8CEA-98D0C0C5D258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31713D6D-5151-436C-8CEA-98D0C0C5D258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31713D6D-5151-436C-8CEA-98D0C0C5D258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11CF19FE-0ACD-40C8-94F5-792C02B1914C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11CF19FE-0ACD-40C8-94F5-792C02B1914C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11CF19FE-0ACD-40C8-94F5-792C02B1914C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11CF19FE-0ACD-40C8-94F5-792C02B1914C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

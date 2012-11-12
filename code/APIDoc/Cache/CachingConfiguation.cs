@@ -29,5 +29,13 @@ namespace Caching
                 base["defaultProvider"] = value;
             }
         }
+        [ConfigurationProperty("clearDuration")]
+        public int ClearDuration
+        {
+            get
+            {
+                return (int)base["clearDuration"];
+            }
+        }
     }
 }
