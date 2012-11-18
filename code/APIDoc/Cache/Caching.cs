@@ -6,31 +6,17 @@ using System.Text;
 namespace Caching
 {
     [Serializable]
-    public class Caching<TKey,TValue>
+    public class Caching<T>
     {
-        public CachingIndex Index { get; set; }
+        public String Key { get; set; }
 
-        public TValue Value { get; set; }
+        /// <summary>
+        /// 过期时间(分钟,0为配置默认值)
+        /// </summary>
+        public int TimeOutMinutes { get; set; }
 
-        public TKey Key
-        {
-            get
-            {
-                return (TKey)Index.Key;
-            }
-        }
+        public T Value { get; set; }
 
-        public Caching(TKey key, TValue value, int Duration)
-        {
-            this.Value = value;
-            Index = new CachingIndex
-            {
-                IndexKey = key.ToString(),
-                CreateDate = DateTime.Now,
-                Duration = Duration,
-                KeyType = key.GetType()
-            };
-        }
         public Caching() { }
     }
 }

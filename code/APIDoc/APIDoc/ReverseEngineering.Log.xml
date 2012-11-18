@@ -6,24 +6,32 @@
   <MessageClass Name="Error" Label="错误" Option="显示错误" />
   <MessageClass Name="Property" Label="属性" Option="显示元数据" />
   <MessageClass Name="Diagnostic" Label="消息" Option="显示诊断消息" />
-  <Message Timestamp="2012-11-10T18:38:38" Importance="High" Text="已启动反向工程。" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel”-  (ModelStoreModel)" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::APIDoc”-  (Class)   (已进行部分反向工程 - 定义未更新) " />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::BaseTitle”-  (Class)   (已进行部分反向工程 - 定义未更新) " />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Medium" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::Category”-  (Class)" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::Category::APISet”-  (Property)" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::Category::Category”-  (Operation)" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::Category::CategorySet”-  (Property)" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::Set”-  (Class)   (已进行部分反向工程 - 定义未更新) " />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::Set&lt;APIDoc‎&gt;”-  (Class)   (已进行部分反向工程 - 定义未更新) " />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::Set&lt;Category‎&gt;”-  (Class)   (已进行部分反向工程 - 定义未更新) " />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “d3bcf968-9efa-44d7-87be-203048ba93dc”-  (ClassifierTemplateParameter)" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下关系反向工程到 UML 模型中: APIDocModel::Category 到 APIDocModel::Set&lt;APIDoc‎&gt; (Association)" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下关系反向工程到 UML 模型中: APIDocModel::Category 到 APIDocModel::Set&lt;Category‎&gt; (Association)" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下关系反向工程到 UML 模型中: APIDocModel::Category 到 APIDocModel::BaseTitle (Generalization)" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下关系反向工程到 UML 模型中: APIDocModel::APIDoc 到 APIDocModel::BaseTitle (Generalization)" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="Diagnostic" Text="已将以下关系反向工程到 UML 模型中: APIDocModel::Damain 到 APIDocModel::BaseTitle (Generalization)" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="High" Text="已对(1)个类型进行完全反向工程。" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="High" Text="已对(5)个类型进行部分反向工程。这些类型未包含在原始选定内容中，因此未对其整个定义进行反向工程。相反，此浅表操作只确保这些类型存在于 UML 模型中，因为需要用它们来完全描述其他元素。" />
-  <Message Timestamp="2012-11-10T18:38:39" Importance="High" Text="反向工程操作已完成，出现了(0)个错误和(0)个警告。" />
+  <Message Timestamp="2012-11-19T00:24:34" Importance="High" Text="已启动反向工程。" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “851ee198-8862-441e-bfa2-d61793465b91”-  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::APIDoc”-  (Package)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::APIDoc::Model”-  (Package)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::APIDoc::Model::ErrorCode”-  (Class)   (已进行部分反向工程 - 定义未更新) " />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::APIDoc::Model::Parameter”-  (Class)   (已进行部分反向工程 - 定义未更新) " />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Medium" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::APIDoc::Model::Response”-  (Class)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::APIDoc::Model::Response::DemoSet”-  (Property)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::APIDoc::Model::Response::ErrorCodeSet”-  (Property)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::APIDoc::Model::Response::ParameterSet”-  (Property)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::APIDoc::Model::Response::Response”-  (Operation)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::APIDoc::Model::ResponseDemo”-  (Class)   (已进行部分反向工程 - 定义未更新) " />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::System”-  (Package)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::System::Collections”-  (Package)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::System::Collections::Generic”-  (Package)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::System::Collections::Generic::IList”-  (Interface)   (已进行部分反向工程 - 定义未更新) " />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::System::Collections::Generic::IList&lt;ErrorCode‎&gt;”-  (Interface)   (已进行部分反向工程 - 定义未更新) " />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::System::Collections::Generic::IList&lt;Parameter‎&gt;”-  (Interface)   (已进行部分反向工程 - 定义未更新) " />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下元素反向工程到 UML 模型中: “APIDocModel::System::Collections::Generic::IList&lt;ResponseDemo‎&gt;”-  (Interface)   (已进行部分反向工程 - 定义未更新) " />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下关系反向工程到 UML 模型中: APIDocModel::APIDoc::Model::Response 到 APIDocModel::System::Collections::Generic::IList&lt;ResponseDemo‎&gt; (Association)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下关系反向工程到 UML 模型中: APIDocModel::APIDoc::Model::Response 到 APIDocModel::System::Collections::Generic::IList&lt;Parameter‎&gt; (Association)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下关系反向工程到 UML 模型中: APIDocModel::APIDoc::Model::Response 到 APIDocModel::System::Collections::Generic::IList&lt;ErrorCode‎&gt; (Association)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下关系反向工程到 UML 模型中: APIDocModel::System::Collections::Generic::IList&lt;ResponseDemo‎&gt; 到 APIDocModel::System::Collections::Generic::ICollection&lt;ResponseDemo‎&gt; (Generalization)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下关系反向工程到 UML 模型中: APIDocModel::System::Collections::Generic::IList&lt;Parameter‎&gt; 到 APIDocModel::System::Collections::Generic::ICollection&lt;Parameter‎&gt; (Generalization)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="Diagnostic" Text="已将以下关系反向工程到 UML 模型中: APIDocModel::System::Collections::Generic::IList&lt;ErrorCode‎&gt; 到 APIDocModel::System::Collections::Generic::ICollection&lt;ErrorCode‎&gt; (Generalization)" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="High" Text="已对(1)个类型进行完全反向工程。" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="High" Text="已对(7)个类型进行部分反向工程。这些类型未包含在原始选定内容中，因此未对其整个定义进行反向工程。相反，此浅表操作只确保这些类型存在于 UML 模型中，因为需要用它们来完全描述其他元素。" />
+  <Message Timestamp="2012-11-19T00:24:35" Importance="High" Text="反向工程操作已完成，出现了(0)个错误和(0)个警告。" />
 </Log>

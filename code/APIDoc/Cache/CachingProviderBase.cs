@@ -14,13 +14,13 @@ namespace Caching
         /// 获取缓存索引字典
         /// </summary>
         /// <returns></returns>
-        protected abstract Dictionary<String, CachingIndex> GetCachingIndexDictionary();
+        //protected abstract Dictionary<String, CachingIndex> GetCachingIndexDictionary();
         /// <summary>
         /// 设置缓存索引字典
         /// </summary>
         /// <param name="dicCachingIndex"></param>
         /// <returns></returns>
-        protected abstract bool SetCachingIndexDictionary(Dictionary<String, CachingIndex> dicCachingIndex);
+        //protected abstract bool SetCachingIndexDictionary(Dictionary<String, CachingIndex> dicCachingIndex);
 
         /// <summary>
         /// 获取缓存
@@ -29,13 +29,13 @@ namespace Caching
         /// <typeparam name="TValue"></typeparam>
         /// <param name="key"></param>
         /// <returns></returns>
-        public Caching<TKey, TValue> GetCaching<TKey,TValue>(TKey key)
+        public Caching<T> GetCaching<T>(String key)
         {
-            Caching<TKey,TValue> caching = new Caching<TKey,TValue>();
+            Caching<T> caching = new Caching<T>();
  
-            caching.Index = GetCachingIndex(key.ToString());
+            //caching.Index = GetCachingIndex(key.ToString());
 
-            caching.Value = GetCachingValue<TKey,TValue>(key);
+            caching.Value = GetCachingValue<T>(key);
 
             return caching;
         }
@@ -45,12 +45,12 @@ namespace Caching
         /// <typeparam name="TKey"></typeparam>
         /// <param name="key"></param>
         /// <returns></returns>
-        private CachingIndex GetCachingIndex(String key)
-        {
-            Dictionary<String, CachingIndex> dicCachingIdnex = GetCachingIndexDictionary();
-            if (dicCachingIdnex == null) return null;
-            return dicCachingIdnex[key];
-        }
+        //private CachingIndex GetCachingIndex(String key)
+        //{
+        //    Dictionary<String, CachingIndex> dicCachingIdnex = GetCachingIndexDictionary();
+        //    if (dicCachingIdnex == null) return null;
+        //    return dicCachingIdnex[key];
+        //}
 
         /// <summary>
         /// 获取缓存值
@@ -59,7 +59,7 @@ namespace Caching
         /// <typeparam name="TValue"></typeparam>
         /// <param name="key"></param>
         /// <returns></returns>
-        protected abstract TValue GetCachingValue<TKey, TValue>(TKey key);
+        protected abstract T GetCachingValue<T>(String key);
 
         /// <summary>
         /// 设置缓存
@@ -67,19 +67,9 @@ namespace Caching
         /// <typeparam name="TKey"></typeparam>
         /// <typeparam name="TValue"></typeparam>
         /// <param name="caching"></param>
-        public bool SetCaching<TKey, TValue>(Caching<TKey, TValue> caching)
+        public bool SetCaching<T>(Caching<T> caching)
         {
-            bool result = false;
-            if (SetCachingIndex(caching.Index))
-            {
-                if (!SetCachingValue<TKey, TValue>(caching))
-                {
-                    DeleteCachingValue(caching.Key);
-                }
-                else
-                    result = true;
-            }
-            return result;
+            return SetCachingValue(caching);
         }
 
         /// <summary>
@@ -87,17 +77,17 @@ namespace Caching
         /// </summary>
         /// <typeparam name="TKey"></typeparam>
         /// <param name="cachingIndex"></param>
-        private bool SetCachingIndex(CachingIndex cachingIndex)
-        {
-            //lock (obj)
-            //{
-                Dictionary<String, CachingIndex> dicCachingIdnex = GetCachingIndexDictionary();
-                if (dicCachingIdnex == null) return false;
-                dicCachingIdnex[cachingIndex.IndexKey] = cachingIndex;
+        //private bool SetCachingIndex(CachingIndex cachingIndex)
+        //{
+        //    //lock (obj)
+        //    //{
+        //        Dictionary<String, CachingIndex> dicCachingIdnex = GetCachingIndexDictionary();
+        //        if (dicCachingIdnex == null) return false;
+        //        dicCachingIdnex[cachingIndex.IndexKey] = cachingIndex;
 
-                return SetCachingIndexDictionary(dicCachingIdnex);
-            //}
-        }
+        //        return SetCachingIndexDictionary(dicCachingIdnex);
+        //    //}
+        //}
 
         /// <summary>
         /// 设置缓存值
@@ -105,7 +95,7 @@ namespace Caching
         /// <typeparam name="TKey"></typeparam>
         /// <typeparam name="TValue"></typeparam>
         /// <param name="caching"></param>
-        protected abstract bool SetCachingValue<TKey, TValue>(Caching<TKey, TValue> caching);
+        protected abstract bool SetCachingValue<T>(Caching<T> caching);
 
         /// <summary>
         /// 删除缓存
@@ -113,23 +103,23 @@ namespace Caching
         /// <typeparam name="TKey"></typeparam>
         /// <param name="key"></param>
         /// <returns></returns>
-        public bool DeleteCaching<TKey>(TKey key)
-        {
-            bool result = false;
+        //public bool DeleteCaching<TKey>(TKey key)
+        //{
+        //    bool result = false;
 
-            CachingIndex index = GetCachingIndex(key.ToString());
+        //    CachingIndex index = GetCachingIndex(key.ToString());
 
-            if (DeleteCachingValue<TKey>(key))
-            {
-                if (!DeleteCachingIndex(key.ToString()))
-                {
-                    SetCachingIndex(index);
-                }
-                else
-                    result = true;
-            }
-            return result;
-        }
+        //    if (DeleteCachingValue<TKey>(key))
+        //    {
+        //        if (!DeleteCachingIndex(key.ToString()))
+        //        {
+        //            SetCachingIndex(index);
+        //        }
+        //        else
+        //            result = true;
+        //    }
+        //    return result;
+        //}
 
         /// <summary>
         /// 删除缓存索引
@@ -137,57 +127,57 @@ namespace Caching
         /// <typeparam name="TKey"></typeparam>
         /// <param name="key"></param>
         /// <returns></returns>
-        private bool DeleteCachingIndex(String key)
-        {
-            //lock (obj)
-            //{
-                Dictionary<String, CachingIndex> dicCachingIdnex = GetCachingIndexDictionary();
-                if (dicCachingIdnex == null) return false;
-                dicCachingIdnex.Remove(key);
-                return SetCachingIndexDictionary(dicCachingIdnex);
-            //}
-        }
+        //private bool DeleteCachingIndex(String key)
+        //{
+        //    //lock (obj)
+        //    //{
+        //        Dictionary<String, CachingIndex> dicCachingIdnex = GetCachingIndexDictionary();
+        //        if (dicCachingIdnex == null) return false;
+        //        dicCachingIdnex.Remove(key);
+        //        return SetCachingIndexDictionary(dicCachingIdnex);
+        //    //}
+        //}
         /// <summary>
         /// 删除缓存值
         /// </summary>
         /// <typeparam name="TKey"></typeparam>
         /// <param name="key"></param>
         /// <returns></returns>
-        protected abstract bool DeleteCachingValue<TKey>(TKey key);
+        //protected abstract bool DeleteCachingValue<TKey>(TKey key);
 
 
-        public bool DeleteExpiredCachings()
-        {
-            bool result = true;
-            lock (obj)
-            {
+        //public bool DeleteExpiredCachings()
+        //{
+        //    bool result = true;
+        //    lock (obj)
+        //    {
 
-                //Copy 目录, 以防影响原目录
-                Dictionary<String, CachingIndex> dicCachingIndexCopy = new Dictionary<string, CachingIndex>();
+        //        //Copy 目录, 以防影响原目录
+        //        Dictionary<String, CachingIndex> dicCachingIndexCopy = new Dictionary<string, CachingIndex>();
 
-                Dictionary<String, CachingIndex> dicCachingIndexSource = GetCachingIndexDictionary();
+        //        Dictionary<String, CachingIndex> dicCachingIndexSource = GetCachingIndexDictionary();
 
-                if (dicCachingIndexSource == null) return false;
+        //        if (dicCachingIndexSource == null) return false;
 
-                foreach (KeyValuePair<String, CachingIndex> index in dicCachingIndexSource)
-                {
-                    dicCachingIndexCopy.Add(index.Key, index.Value);
-                }
+        //        foreach (KeyValuePair<String, CachingIndex> index in dicCachingIndexSource)
+        //        {
+        //            dicCachingIndexCopy.Add(index.Key, index.Value);
+        //        }
 
 
 
-                for (int i = 0; i < dicCachingIndexCopy.Count; i++)
-                {
-                    KeyValuePair<String, CachingIndex> caIndex = dicCachingIndexCopy.ElementAt(i);
+        //        for (int i = 0; i < dicCachingIndexCopy.Count; i++)
+        //        {
+        //            KeyValuePair<String, CachingIndex> caIndex = dicCachingIndexCopy.ElementAt(i);
 
-                    if (caIndex.Value.Expired)
-                    {
-                        result = DeleteCaching(Convert.ChangeType(caIndex.Key, caIndex.Value.KeyType));
-                    }
-                }
-            }
-            return result;
-        }
+        //            if (caIndex.Value.Expired)
+        //            {
+        //                result = DeleteCaching(Convert.ChangeType(caIndex.Key, caIndex.Value.KeyType));
+        //            }
+        //        }
+        //    }
+        //    return result;
+        //}
 
 
     }

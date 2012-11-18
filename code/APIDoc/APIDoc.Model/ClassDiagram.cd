@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="APIDoc.Model.Domain" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>API\Domain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIDoc.Model.API" Collapsed="true">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAABgAgAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>API\API.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIDoc.Model.Category" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>API\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIDoc.Model.ErrorCode" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAgAAAAAAAgAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>API\ErrorCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIDoc.Model.Parameter" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>API\Parameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIDoc.Model.Request" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAEEAACAEAAAAAAAA=</HashCode>
+      <FileName>API\Request.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIDoc.Model.Response" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>API\Response.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIDoc.Model.ResponseDemo" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>API\ResponseDemo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="APIDoc.Model.ResponseType" Collapsed="true">
+    <Position X="0.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACCAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>API\ResponseType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="APIDoc.Model.ParameterType" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>API\ParameterType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="APIDoc.Model.RequestType" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>API\RequestType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

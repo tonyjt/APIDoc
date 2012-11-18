@@ -22,9 +22,10 @@
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <childLayers>
-        <layer Id="bb902bf2-40e0-452f-9937-62b6c67c5652" name="SQL &#xD;&#xA;Provider" />
-        <layer Id="a4e3085f-017b-4558-98bd-17cf37010424" name="Oracle &#xD;&#xA;Provider" />
-        <layer Id="ca9342ca-ad22-422a-8615-69c1c03819fc" name="Provider" />
+        <layer Id="bb902bf2-40e0-452f-9937-62b6c67c5652" name="SQL DAL" />
+        <layer Id="a4e3085f-017b-4558-98bd-17cf37010424" name="Oracle DAL" />
+        <layer Id="ca9342ca-ad22-422a-8615-69c1c03819fc" name="Interface" />
+        <layer Id="d8caf160-97d1-4be7-8b55-744a1ea1146e" name="DAL Factory" />
       </childLayers>
     </layer>
     <layer Id="aea1b272-0ffb-4969-b0f3-d77460d8d306" name="Business Components">
