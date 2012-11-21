@@ -20,7 +20,7 @@ namespace APIDoc.IDAL
         /// 创建Domain
         /// </summary>
         /// <param name="domain"></param>
-        void Insert(Domain domain);
+        bool Insert(Domain domain);
 
         /// <summary>
         /// 更新Domain

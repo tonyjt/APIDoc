@@ -12,6 +12,7 @@ namespace APIDoc.Model
 {
     public class Domain : BaseTitle
     {
+        public Id Id { get; set; }
         /// <summary>
         /// String
         /// </summary>

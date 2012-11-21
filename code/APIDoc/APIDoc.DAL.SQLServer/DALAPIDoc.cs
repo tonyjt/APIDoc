@@ -51,9 +51,28 @@ namespace APIDoc.DAL.SQLServer
         /// 创建API
         /// </summary>
         /// <param name="api"></param>
-        public void Insert(API api)
-        { 
+        public bool Insert(API api)
+        {
+            APIDoc_WebDBContext context = new APIDoc_WebDBContext();
 
+            DBAPIDoc dbApiDoc = ConvertModelHelper.ToDBAPIModel(api);
+
+            if(dbApiDoc ==null) return false;
+
+            var apid = (from q in context.APIDocs
+                           where q.APIDocId == api.Id.Value
+                           select q).FirstOrDefault();
+
+            if (apid == null)
+            {
+                context.APIDocs.Add(dbApiDoc);
+
+                context.SaveChanges();
+
+                return true;
+            }
+            else
+                return false;
         }
 
         /// <summary>
@@ -62,7 +81,35 @@ namespace APIDoc.DAL.SQLServer
         /// <param name="api"></param>
         public void Update(API api)
         {
+            APIDoc_WebDBContext context = new APIDoc_WebDBContext();
 
+            DBAPIDoc dbApiDoc = ConvertModelHelper.ToDBAPIModel(api);
+
+            if (dbApiDoc == null) return;
+
+            var apid = (from q in context.APIDocs
+                           where q.APIDocId == api.Id.Value
+                           select q).FirstOrDefault();
+
+            if(apid == null)
+            {
+                context.APIDocs.Add(dbApiDoc);
+            }
+            else
+            {
+                apid.Parameters = dbApiDoc.Parameters;
+                apid.APIDocId = dbApiDoc.APIDocId;
+                apid.Title = dbApiDoc.Title;
+                apid.Description = dbApiDoc.Description;
+                apid.CategoryId = dbApiDoc.CategoryId;
+                apid.RequestUrl = dbApiDoc.RequestUrl;
+                apid.RequestType = dbApiDoc.RequestType;
+                apid.NeedAuth = dbApiDoc.NeedAuth;
+                apid.ActionTypes = dbApiDoc.ActionTypes;
+                apid.ResponseDemoes = dbApiDoc.ResponseDemoes;
+                apid.Errors = dbApiDoc.Errors;
+            }
+            context.SaveChanges();
         }
 
     }

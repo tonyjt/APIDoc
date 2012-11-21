@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="DALAPIDoc.cs" />
     <Compile Include="ConvertModelHelper.cs" />
+    <Compile Include="DALDomain.cs" />
     <Compile Include="Models\APIDoc.cs" />
     <Compile Include="Models\APIDoc_WebDBContext.cs" />
     <Compile Include="Models\Category.cs" />

@@ -27,7 +27,7 @@ namespace APIDoc.IDAL
         /// 创建API
         /// </summary>
         /// <param name="api"></param>
-        void Insert(API api);
+        bool Insert(API api);
 
         /// <summary>
         /// 更新API
