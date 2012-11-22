@@ -27,13 +27,13 @@ namespace APIDoc.IDAL
         /// 创建Category
         /// </summary>
         /// <param name="category"></param>
-        void Insert(Category category);
+        bool Insert(Category category);
 
         /// <summary>
         /// 更新Category
         /// </summary>
         /// <param name="category"></param>
-        void Update(Category category);
+        bool Update(Category category);
 
 
     }

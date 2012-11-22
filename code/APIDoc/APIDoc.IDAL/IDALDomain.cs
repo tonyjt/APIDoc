@@ -26,6 +26,6 @@ namespace APIDoc.IDAL
         /// 更新Domain
         /// </summary>
         /// <param name="domain"></param>
-        void Update(Domain domain);
+        bool Update(Domain domain);
     }
 }

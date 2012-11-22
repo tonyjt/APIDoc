@@ -135,6 +135,46 @@ namespace APIDoc.DAL.SQLServer
                 RootUrl = dbModel.RootUrl
             };
         }
+
+        public static Category ToCategoryModel(DBCategory dbModel,List<DBCategory> childCategories)
+        {
+            if (dbModel == null) return null;
+
+            List<Category> children = new List<Category>();
+
+            if(childCategories!=null)
+            {
+            foreach (DBCategory dbCategory in childCategories)
+            {
+                children.Add(ToCategoryModel(dbCategory));
+            }
+            }
+            return ToCategoryModel(dbModel, children);
+        }
+
+        public static Category ToCategoryModel(DBCategory dbModel,List<Category> childCategories = null)
+        {
+            if(dbModel == null)return null;
+
+            Id parentId;
+
+            if (dbModel.ParentId.HasValue)
+            {
+                parentId = new Id(dbModel.ParentId.Value);
+            }
+            else
+                parentId = null;
+            return new Category
+            {
+                CategorySet = childCategories,
+                Id = new Id(dbModel.CategoryId),
+                DomainId = new Id(dbModel.DomainId),
+                Title = dbModel.Title,
+                ParentId = parentId
+            };
+        }
+
+
         #endregion
 
         #region  To DB Model
@@ -240,6 +280,18 @@ namespace APIDoc.DAL.SQLServer
                 Title = model.Title,
                 Description = model.Description,
                 RootUrl = model.RootUrl
+            };
+        }
+
+        public static DBCategory ToDBCategoryModel(Category model)
+        {
+            if (model == null) return null;
+            return new DBCategory
+            {
+                DomainId = model.DomainId.Value,
+                Title = model.Title,
+                CategoryId = model.Id.Value,
+                ParentId = model.ParentId.Value
             };
         }
         #endregion

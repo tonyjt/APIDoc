@@ -34,19 +34,19 @@ namespace APIDoc.IDAL
         /// 创建ErrorCode
         /// </summary>
         /// <param name="domain"></param>
-        void Insert(ErrorCode errorCode,Id apiDocId = null);
+        bool Insert(ErrorCode errorCode, Id apiDocId = null);
 
         /// <summary>
         /// 更新ErrorCode
         /// </summary>
         /// <param name="domain"></param>
-        void Update(ErrorCode errorCode);
+        bool Update(ErrorCode errorCode);
 
         /// <summary>
         /// 设置API的ErrorCode
         /// </summary>
         /// <param name="apiDocId"></param>
         /// <param name="errorCodeId"></param>
-        void SetAPIErrorCodes(Id apiDocId, List<int> errorCodeId);
+        bool SetAPIErrorCodes(Id apiDocId, List<int> errorCodeId);
     }
 }

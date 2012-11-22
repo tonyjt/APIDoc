@@ -13,7 +13,11 @@ namespace APIDoc.Model
 {
     public class Category : BaseTitle
     {
+        public Id Id { get; set; }
+
         public Id DomainId { get; set; }
+
+        public Id ParentId { get; set; }
 
         public IList<Category> CategorySet
         {

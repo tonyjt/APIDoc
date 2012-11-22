@@ -33,7 +33,7 @@ namespace APIDoc.IDAL
         /// 更新API
         /// </summary>
         /// <param name="api"></param>
-        void Update(API api);
+        bool Update(API api);
 
 
 

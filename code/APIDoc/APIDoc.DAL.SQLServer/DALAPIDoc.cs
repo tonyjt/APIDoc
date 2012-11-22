@@ -79,13 +79,13 @@ namespace APIDoc.DAL.SQLServer
         /// 更新API
         /// </summary>
         /// <param name="api"></param>
-        public void Update(API api)
+        public bool Update(API api)
         {
             APIDoc_WebDBContext context = new APIDoc_WebDBContext();
 
             DBAPIDoc dbApiDoc = ConvertModelHelper.ToDBAPIModel(api);
 
-            if (dbApiDoc == null) return;
+            if (dbApiDoc == null) return false;
 
             var apid = (from q in context.APIDocs
                            where q.APIDocId == api.Id.Value
@@ -98,7 +98,6 @@ namespace APIDoc.DAL.SQLServer
             else
             {
                 apid.Parameters = dbApiDoc.Parameters;
-                apid.APIDocId = dbApiDoc.APIDocId;
                 apid.Title = dbApiDoc.Title;
                 apid.Description = dbApiDoc.Description;
                 apid.CategoryId = dbApiDoc.CategoryId;
@@ -110,6 +109,8 @@ namespace APIDoc.DAL.SQLServer
                 apid.Errors = dbApiDoc.Errors;
             }
             context.SaveChanges();
+
+            return true;
         }
 
     }

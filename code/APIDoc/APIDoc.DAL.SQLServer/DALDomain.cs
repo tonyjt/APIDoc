@@ -54,10 +54,10 @@ namespace APIDoc.DAL.SQLServer
         /// 更新Domain
         /// </summary>
         /// <param name="domain"></param>
-        public void Update(Domain domain)
+        public bool Update(Domain domain)
         {
             DBDomain dbModel = ConvertModelHelper.ToDBDomainModel(domain);
-
+            if (dbModel == null) return false;
             APIDoc_WebDBContext context = new APIDoc_WebDBContext();
             var dbDomain = (from q in context.Domains
                             where q.DomainId == domain.Id.Value
@@ -71,12 +71,12 @@ namespace APIDoc.DAL.SQLServer
             }
             else
             {
-                dbDomain.DomainId= dbModel.DomainId;
                 dbDomain.Title = dbModel.Title;
                 dbDomain.Description = dbModel.Description;
                 dbDomain.RootUrl = dbModel.RootUrl;
             }
             context.SaveChanges();
+            return true;
         }
     }
 }
